@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda da Reunião Sacramental</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4 mb-5">
+        <h2 class="text-center mb-4">Agenda da Reunião Sacramental</h2>
+        
+        <div class="mb-4 p-3 border rounded bg-light">
+            <div class="mb-3">
+                <label for="data" class="form-label fw-bold">📅 Data da Reunião:</label>
+                <input type="date" id="data" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="anuncios" class="form-label fw-bold">📝 Anúncios:</label>
+                <textarea id="anuncios" class="form-control" rows="4" placeholder="Digite os anúncios e comunicações importantes..."></textarea>
+            </div>
+        </div>
+
+        <div class="mb-4 p-3 border rounded">
+            <h3 class="mb-3">👤 Presidência </h3>
+
+            <div class="mb-3">
+                <label for="presidida" class="form-label">Presidida por:</label>
+                <select id="presidida" class="form-select">
+                    <option value="">Seleciona </option>
+                    <option>Manuel de jesus </option>
+                    <option>Luis Gonzaga Souza Damasceno</option>
+                    </select>
+            </div>
+
+            <div class="mb-3" id="presididaOutroDiv"> 
+                <label for="presididaOutro" class="form-label text-muted">Especifique Outro Nome:</label>
+                <input type="text" id="presididaOutro" class="form-control" placeholder="Outros">
+            </div>
+
+            <div class="mb-3">
+                <label for="dirigindo" class="form-label">Dirigindo:</label>
+                <select id="dirigindo" class="form-select">
+                    <option value="">Selecione a Direção Padrão</option>
+                    <option>Luis Gonzaga Souza Damasceno</option>
+                    <option>Maciel Bruno Da Costa Pereira</option>
+                    </select>
+            </div>
+
+            <div class="mb-3" id="dirigindoOutroDiv"> 
+                <label for="dirigindoOutro" class="form-label text-muted">Especifique Outro Nome:</label>
+            
+                <input type="text" id="dirigindoOutro" class="form-control" placeholder="Digite o nome de quem dirige se for de fora">
+            </div>
+        </div>
+
+        <div class="mb-4 p-3 border rounded bg-light">
+            <h3 class="mb-3">🎵 Músicas e Orações</h3>
+
+            <div class="mb-3">
+                <label for="regente" class="form-label">Regente (Música):</label>
+                <select id="regente" class="form-select">
+                    <option value="">Selecione o Regente Padrão</option>
+                    <option>Viviane Rosário da Silva</option>
+                    <option>Ana Cristina da Conceição Oliveira</option>
+                    </select>
+            </div>
+
+            <div class="mb-3" id="regenteOutroDiv"> 
+                <label for="regenteOutro" class="form-label text-muted"> Especifique Outro Nome:</label>
+                <input type="text" id="regenteOutro" class="form-control" placeholder="Outros">
+            </div>
+
+            <div class="mb-3">
+                <label for="primeiro_hino" class="form-label">Primeiro Hino:</label>
+                <input type="text" id="primeiro_hino" class="form-control" placeholder="Ex: Hino 100 - Mais perto, ó Deus, de ti">
+            </div>
+            
+            <div class="mb-3">
+                <label for="hino_sacramental" class="form-label">Hino Sacramental:</label>
+                <input type="text" id="hino_sacramental" class="form-control" placeholder="Ex: Hino 170 - Com fervor o sacramento">
+            </div>
+            
+            <div class="mb-3">
+                <label for="ultimo_hino" class="form-label">Último Hino:</label>
+                <input type="text" id="ultimo_hino" class="form-control" placeholder="Ex: Hino 130 - Mestre, o mar se revolta">
+            </div>
+            
+            <div class="mb-3">
+                <label for="primeira_oracao" class="form-label">Primeira Oração:</label>
+                <input type="text" id="primeira_oracao" class="form-control" placeholder="Nome da pessoa que fará a primeira oração">
+            </div>
+            
+            <div>
+                <label for="ultima_oracao" class="form-label">Última Oração:</label>
+                <input type="text" id="ultima_oracao" class="form-control" placeholder="Nome da pessoa que fará a última oração">
+            </div>
+        </div>
+
+        <div class="mb-4 p-3 border rounded">
+            <h3 class="mb-3">🗣️ Oradores da Reunião</h3>
+
+            <div class="mb-3">
+                <label for="primeiro_orador" class="form-label">Primeiro Orador:</label>
+                <input type="text" id="primeiro_orador" class="form-control" placeholder="Nome do primeiro orador">
+            </div>
+            
+            <div class="mb-3">
+                <label for="segundo_orador" class="form-label">Segundo Orador:</label>
+                <input type="text" id="segundo_orador" class="form-control" placeholder="Nome do segundo orador">
+            </div>
+            
+            <div>
+                <label for="terceiro_orador" class="form-label">Terceiro Orador (Opcional):</label>
+                <input type="text" id="terceiro_orador" class="form-control" placeholder="Nome do terceiro orador">
+            </div>
+        </div>
+
+        <button id="submitButton" class="btn btn-primary w-100 btn-lg">📤 Salvar Agenda</button>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="js/script.js" type="module"></script>
+    <script src="js/firebase-config.js" type="module"></script>
+</body>
+</html>
