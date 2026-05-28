@@ -6,7 +6,7 @@ import { getDatabase } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-
 
 // SUAS CREDENCIAIS REAIS (Combinadas da Versão 2)
 const firebaseConfig = {
-    apiKey: "AIzaSyBHHfgfeV1lXiSFEIwGAs2LFAYTzqAnuw8",
+    apiKey: "AIzaSyBtlO_ZwZLlwN1NU5h8Jsz9bQTaxDsyxd0",
     authDomain: "agenda-sacramental-9cc49.firebaseapp.com",
     
     // IMPORTANTE: Adicionar a databaseURL no formato correto.
